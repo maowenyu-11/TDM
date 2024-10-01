@@ -379,8 +379,7 @@ class Tenc(nn.Module):
         #DTS
         B, L= states.size(0), states.size(1) 
         continuity = F.softmax(torch.nn.functional.cosine_similarity(seq_emb[:,:L-1], seq_emb[:,1:L], dim=2),dim=1)
-        stability =F.softmax( torch.tensor(torch.sum(continuity * torch.log(continuity + 1e-9), dim=1)),dim=0)  # 加上一个小的常数以避免 log(0)
-
+        stability =F.softmax( torch.tensor(torch.sum(continuity * torch.log(continuity + 1e-9), dim=1)),dim=0)  
         for r in range(B):
             #sample sequence
             if random.random() < p1*stability[r]*B:
