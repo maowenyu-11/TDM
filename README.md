@@ -1,8 +1,9 @@
 # DreamMiss
 
 The algorithm of TDM.
-![](https://github.com/maowenyu-11/TDM/blob/main/algorithm.png,width="50%" 
-     style="max-width: 500px;")
+<img src="https://github.com/maowenyu-11/TDM/blob/main/algorithm.png" 
+     width="50%" 
+     style="max-width: 500px;">
 
 
 ## Reproduce the results
