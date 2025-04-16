@@ -1,6 +1,7 @@
 # DreamMiss
 
-The algorithm of TDM.
+The algorithms of training and generating phases of TDM.
+
 <img src="https://github.com/maowenyu-11/TDM/blob/main/algorithm.png" 
      width="50%" 
      style="max-width: 500px;">
