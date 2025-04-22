@@ -1,4 +1,5 @@
-# Welcome to TDM, this is an official implementation of ***Addressing Missing Data Issue for Diffusion-based Recommendation***, which is accepted by SIGIR'2025.
+# Welcome to TDM!
+This is an official implementation of ***Addressing Missing Data Issue for Diffusion-based Recommendation***, which is accepted by SIGIR'2025.
 
 ## Algorithms 
 The training and generating phases of TDM are as follows.
