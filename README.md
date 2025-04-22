@@ -3,6 +3,7 @@ This is an official implementation of ***Addressing Missing Data Issue for Diffu
 
 ## Algorithms 
 The training and generating phases of TDM are as follows.
+
 <img src="https://github.com/maowenyu-11/TDM/blob/main/algorithm.png" 
      width="50%" 
      style="max-width: 500px;">
