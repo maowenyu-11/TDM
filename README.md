@@ -15,24 +15,20 @@ Our experiment settings are specified in the `TDM.yml` file. To create the envir
 
 ```
 conda env create -f TDM.yml
-
 ```
 
 ### Zhihu
 ```
 nohup python -u TDM.py --data zhihu --timesteps 1000 --lr 0.01 --beta_sche linear --w 6 --cuda 6 --eval 5 --optimizer adamw --diffuser_type mlp1 --random_seed 100 >> log/TDM_zhihu.log 2>&1 &
-
 ```
 ### YooChoose
 ```
 nohup python -u TDM.py --data yc --timesteps 2000 --lr 0.0001 --beta_sche linear --w 0 --cuda 7 --optimizer adamw --diffuser_type mlp1 --random_seed 100 >> log/TDM_yc.log 2>&1 &
-
 ```
 ### KuaiRec
 
 ```
 nohup python -u TDM.py --data ks --eval 5 --epoch 30 --timesteps 2000 --lr 0.00005 --beta_sche linear --w 2 --cuda 4 --optimizer adamw --diffuser_type mlp1 --random_seed 100 --linespace 100 >> log/TDM_ks.log 2>&1 &
-
 ```
 
 ## Citation
