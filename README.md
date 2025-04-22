@@ -1,7 +1,7 @@
-# DreamMiss
+# Welcome to TDM, this is an official implementation of ***Addressing Missing Data Issue for Diffusion-based Recommendation***, which is accepted by SIGIR'2025.
 
-The algorithms of training and generating phases of TDM.
-
+## Algorithms 
+The training and generating phases of TDM are as follows.
 <img src="https://github.com/maowenyu-11/TDM/blob/main/algorithm.png" 
      width="50%" 
      style="max-width: 500px;">
@@ -10,15 +10,17 @@ The algorithms of training and generating phases of TDM.
 ## Reproduce the results
 ### Zhihu
 ```
-nohup python -u TDM.py --data zhihu --timesteps 1000 --lr 0.01 --beta_sche linear --w 4 --cuda 7 --eval 5 --optimizer adamw --diffuser_type mlp1 --random_seed 100 >> log/dreammiss_zhihu.log 2>&1 &
+nohup python -u TDM.py --data zhihu --timesteps 1000 --lr 0.01 --beta_sche linear --w 6 --cuda 6 --eval 5 --optimizer adamw --diffuser_type mlp1 --random_seed 100 >> log/TDM_zhihu.log 2>&1 &
+
 ```
 ### YooChoose
 ```
-nohup python -u TDM.py --data yc --timesteps 2000 --lr 0.0001 --beta_sche linear --w 2 --cuda 7 --optimizer adamw --diffuser_type mlp1 --random_seed 100 >> log/dreammiss_yc.log 2>&1 &
+nohup python -u TDM.py --data yc --timesteps 2000 --lr 0.0001 --beta_sche linear --w 0 --cuda 7 --optimizer adamw --diffuser_type mlp1 --random_seed 100 >> log/TDM_yc.log 2>&1 &
+
 ```
 ### KuaiRec
 
 ```
-nohup python -u TDM.py --data ks --eval 5 --epoch 30 --timesteps 2000 --lr 0.00005 --beta_sche linear --w 2 --cuda 7 --optimizer adamw --diffuser_type mlp1 --random_seed 100 --linespace 100 >> log/dreammiss_ks.log 2>&1 &
- 
+nohup python -u TDM.py --data ks --eval 5 --epoch 30 --timesteps 2000 --lr 0.00005 --beta_sche linear --w 2 --cuda 4 --optimizer adamw --diffuser_type mlp1 --random_seed 100 --linespace 100 >> log/TDM_ks.log 2>&1 &
+
 ```
